@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ذائقوں کا خزانہ — 91 دیسی ریسپیز</title>
+<meta name="description" content="پاکستانی اسٹریٹ فوڈ اور دیسی کھانوں کی 91 ریسپیز — اردو میں، مکمل اجزاء اور طریقہ کار کے ساتھ۔">
+<meta name="theme-color" content="#1B1410">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-180.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="ذائقوں کا خزانہ">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="steam-layer" aria-hidden="true">
+  <span class="steam s1"></span>
+  <span class="steam s2"></span>
+  <span class="steam s3"></span>
+</div>
+
+<header class="board" id="topBoard">
+  <div class="board-inner">
+    <p class="eyebrow">پاکستانی اسٹریٹ فوڈ کلیکشن</p>
+    <h1 class="title">ذائقوں کا <span class="title-accent">خزانہ</span></h1>
+    <p class="subtitle">۹۱ گھریلو ریسپیز — بنانا آسان، ذائقہ لاجواب</p>
+
+    <div class="search-row">
+      <div class="search-slate">
+        <svg viewBox="0 0 24 24" class="search-icon" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="20" y1="20" x2="16.4" y2="16.4"/></svg>
+        <input id="searchInput" type="search" placeholder="ریسپی یا جزو تلاش کریں…" autocomplete="off">
+      </div>
+      <button id="randomBtn" class="tin-btn" title="آج کیا بنائیں؟">
+        <span class="tin-emoji">🎲</span>
+        <span class="tin-label">قسمت کا کھانا</span>
+      </button>
+    </div>
+
+    <div class="stat-strip" id="statStrip"></div>
+  </div>
+</header>
+
+<nav class="cat-shelf" id="catShelf" aria-label="زمرہ جات"></nav>
+
+<main id="mainArea">
+  <div class="section-head" id="sectionHead">
+    <h2 id="sectionTitle">تمام ریسپیز</h2>
+    <span class="count-pill" id="sectionCount">۰</span>
+  </div>
+  <div class="recipe-grid" id="recipeGrid"></div>
+  <p class="empty-msg hidden" id="emptyMsg">😔 کوئی ریسپی نہیں ملی، دوسرا لفظ آزمائیں۔</p>
+</main>
+
+<footer class="site-footer">
+  <p>محبت سے تیار کردہ 🌹 — <span class="wm">M Ijaz · GHS 124/NB</span></p>
+</footer>
+
+<!-- Recipe Detail Sheet -->
+<div class="sheet-backdrop" id="sheetBackdrop"></div>
+<div class="sheet" id="recipeSheet" role="dialog" aria-modal="true">
+  <div class="sheet-handle" id="sheetHandle"></div>
+  <button class="sheet-close" id="sheetClose" aria-label="بند کریں">✕</button>
+  <div class="sheet-content" id="sheetContent"></div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
