@@ -1,0 +1,82 @@
+{
+  "id": "/",
+  "name": "ذائقوں کا خزانہ — دیسی ریسپیز",
+  "short_name": "ذائقوں کا خزانہ",
+  "description": "پاکستانی اسٹریٹ فوڈ اور دیسی کھانوں کی 91 ریسپیز، اردو میں مکمل اجزاء اور طریقہ کار کے ساتھ۔",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+  "orientation": "portrait-primary",
+  "background_color": "#1B1410",
+  "theme_color": "#1B1410",
+  "lang": "ur",
+  "dir": "rtl",
+  "categories": ["food", "lifestyle"],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "icon-96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "آج کا رینڈم کھانا",
+      "short_name": "رینڈم",
+      "description": "بے ترتیب ریسپی دیکھیں",
+      "url": "./index.html?action=random",
+      "icons": [{ "src": "icon-96.png", "sizes": "96x96", "type": "image/png" }]
+    },
+    {
+      "name": "پسندیدہ ریسپیز",
+      "short_name": "پسندیدہ",
+      "description": "آپ کی محفوظ کردہ ریسپیز دیکھیں",
+      "url": "./index.html?cat=favorites",
+      "icons": [{ "src": "icon-96.png", "sizes": "96x96", "type": "image/png" }]
+    },
+    {
+      "name": "چاٹ ریسپیز",
+      "short_name": "چاٹ",
+      "description": "چاٹ کی تمام ریسپیز دیکھیں",
+      "url": "./index.html?cat=chaat",
+      "icons": [{ "src": "icon-96.png", "sizes": "96x96", "type": "image/png" }]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshot-narrow.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "موبائل ویو — زمرہ جات اور ریسپی کارڈز"
+    },
+    {
+      "src": "screenshot-wide.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "ڈیسک ٹاپ ویو — ریسپی گرڈ"
+    }
+  ]
+}
